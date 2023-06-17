@@ -43,17 +43,7 @@
     box-shadow: 13px 7px 0px 0px $bg_dark_1;
   }
 
-  .btn__icon {
-    width: 18px;
-    height: 18px;
-    margin-left: 5px;
-  }
-
-  .btn__icon_p {
-    fill: $font_color;
-  }
-
-  &.btn_1 { //index
+  &.btn_1 {
     display: block;
     width: 100%;
     height: 52px;
@@ -78,34 +68,7 @@
     }
   }
 
-  &.btn-login {
-    height: 52px;
-    font-size: 16px;
-    padding: 15px 10px;
-    box-shadow: 3px 5px 0px 0px $bg_dark_1;
-    &:active {
-      color: $font_color5 !important;
-      background: $btn_bg_color_active !important;
-      box-shadow: none;
-      transform: translate(2px, 4px);
-      @media (min-width: 992px) {
-        transform: translate(3px, 5px);
-      }
-    }
-    @media (min-width: 992px) {
-      height: 52px;
-      padding: 15px 10px;
-    }
-    @media (min-width: 1200px) {
-      width: auto;
-      height: 60px;
-      font-size: 21px;
-      padding: 16px 15px;
-      box-shadow: 4px 6px 0px 0px $bg_dark_1;
-    }
-  }
-
-  &.btn_2 { //user list
+  &.btn_2 {
     width: 100%;
     height: 43px;
     font-size: 15px;
@@ -128,7 +91,7 @@
     }
   }
 
-  &.btn_3 { //change photo
+  &.btn_3 {
     width: 216px;
     height: 50px;
     padding: 5px 5px;
@@ -158,27 +121,6 @@
       padding: 15px 15px;
       width: 380px;
       height: 60px;
-    }
-  }
-
-  &.btn_4 { //signout
-    height: 60px;
-    padding: 22px 10px;
-    border-radius: 15px;
-    font-size: 16px;
-    background-color: $bg_light_2;
-    color: $font_color;
-    border: none;
-    &:hover {
-      background-color: $btn_bg_color_hover;
-      color: $font_color2;
-    }
-    @media (min-width: 992px) {}
-    @media (min-width: 1200px) {
-      font-size: 24px;
-      padding: 21px 15px;
-      width: 280px;
-      height: 66px;
     }
   }
 

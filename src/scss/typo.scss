@@ -11,135 +11,6 @@ h1 {
   }
 }
 
-.h1-index {
-  font-family: $font_family2;
-  color: $font_color2;
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 0.9;
-  margin: 0;
-  text-align: center;
-  @media (min-width: 992px) {}
-  @media (min-width: 1200px) {
-    text-align: left;
-    font-size: 88px;
-  }
-
-  span.row1 {
-    font-size: 15px;
-    font-weight: 400;
-    letter-spacing: 4px;
-    line-height: 1;
-    @media (min-width: 1200px) {
-      font-size: 23px;
-      line-height: 1;
-    }
-  }
-  span.row2 {
-    font-size: 47px;
-    line-height: 0.9;
-    @media (min-width: 1200px) {
-      font-size: 65px;
-    }
-  }
-  span.row3 {
-    font-size: 64px;
-    line-height: 0.9;
-    @media (min-width: 1200px) {
-      font-size: 88px;
-    }
-  }
-
-  &.h1-index_main {
-    margin: -40px 0 17px;
-    @media (min-width: 1200px) {
-      margin: 0;
-      transform: translateY(-30px);
-    }
-  }
-
-  &.h1-index_search {
-    color: $font_color2;
-    font-weight: 700;
-    font-size: 41px;
-    line-height: 0.9;
-    margin: 0 0 33px;
-    @media (min-width: 1200px) {
-      font-size: 53px;
-      line-height: 1.1;
-      margin: 15px 0 0;
-    }
-  }
-
-}
-
-.h1_search {
-  font-family: $font_family2;
-  font-weight: 400;
-  color: $font_color;
-  font-size: 41px;
-  line-height: 50px;
-  margin: 0 0 31px;
-  @media (min-width: 992px) {
-    font-size: 50px;
-    line-height: 60px;
-  }
-  @media (min-width: 1200px) {
-    font-size: 66px;
-    line-height: 80px;
-    margin: 0 0 50px;
-  }
-  @media (min-width: 1400px) {
-    font-size: 80px;
-    line-height: 97px;
-    margin: 0 0 64px;
-  }
-}
-
-.h1_login {
-  font-family: $font_family2;
-  color: $font_color2;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 1.1;
-  margin: 0 0 20px;
-  text-align: center;
-  @media (min-width: 992px) {}
-  @media (min-width: 1200px) {
-    text-align: left;
-    font-size: 35px;
-    line-height: 1.1;
-    margin: 0 0 30px;
-  }
-}
-
-.h1_login2 {
-  font-family: $font_family2;
-  color: $font_color2;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 1.2;
-  margin: 0;
-  text-align: center;
-  text-transform: uppercase;
-  @media (min-width: 1200px) {
-    font-size: 90px;
-    line-height: 94px;
-  }
-  &.h1_login2_my {
-    margin: 74px 0 46px;
-    @media (min-width: 1200px) {
-      margin: 114px 0 70px;
-    }
-  }
-  span {
-    font-size: 15px;
-    @media (min-width: 1200px) {
-      font-size: 37px;
-    }
-  }
-}
-
 h2 {
   font-family: $font_family2;
   font-weight: 700;
@@ -157,39 +28,10 @@ h2 {
     text-shadow: 5px 6px $font_color2;
   }
 
-  &.h2_main {
-    font-size: 38px;
-    text-align: center;
-    margin: 40px 0 76px;
-    @media (min-width: 1200px) {
-      text-align: left;
-      font-size: 76px;
-      margin: 80px 0 60px;
-    }
+  &.h2_dark {
+    color: $bg_dark_1;
   }
 
-  &.h2_index {
-    font-size: 38px;
-    line-height: 1.2;
-    margin-bottom: 29px;
-    color: $font_color;
-    text-align: center;
-    text-shadow: none;
-    @media (min-width: 768px) {}
-    @media (min-width: 992px) {}
-    @media (min-width: 1200px) {
-      text-align: left;
-      font-size: 76px;
-      margin-bottom: 48px;
-    }
-  }
-}
-
-.h2_subscr {
-  display: none;
-  @media (min-width: 1200px) {
-    display: block;
-  }
 }
 
 h3 {
@@ -209,26 +51,6 @@ h3 {
   }
 }
 
-h4 {
-  font-family: $font_family;
-  font-weight: 300;
-  color: $font_color;
-  font-size: 21px;
-  line-height: 32px;
-  margin: 15px 0 30px 0;
-  text-align: center;
-  text-transform: uppercase;
-  @media (min-width: 992px) {
-    font-size: 37px;
-    line-height: 60px;
-    margin: 0 0 70px 0;
-  }
-
-  &.h4_pv {
-    padding: 0 20px;
-  }
-}
-
 p {
   line-height: 30px;
   margin-bottom: 1rem;
@@ -244,18 +66,6 @@ p {
   }
 }
 
-.secondscreen {
-  p.pmain {
-    font-size: 14px;
-    line-height: 28px !important;
-    margin-bottom: 2rem;
-    @media (min-width: 992px) {
-      font-size: 20px !important;
-      line-height: 39px !important;
-    }
-  }
-}
-
 a {
   color: $link_color;
   text-decoration: none;
@@ -266,37 +76,5 @@ a {
   &:active {
     color: $link_active_color;
     text-decoration: none;
-  }
-}
-
-.link1 {
-  font-family: $link_txt_family;
-  font-weight: 400;
-  font-size: 16px;
-  color: $font_color;
-  text-transform: uppercase;
-  &:hover {
-    color: $link_hover_color1;
-    text-decoration: none;
-  }
-  @media (min-width: 1200px) {
-    font-size: 22px;
-  }
-}
-
-.link2 {
-  font-family: $font_family;
-  font-weight: 400;
-  color: $font_color;
-  font-size: 14px;
-  text-transform: uppercase;
-  &:hover {
-    color: $link_hover_color;
-  }
-  &:active {
-    color: $link_active_color;
-  }
-  @media (min-width: 992px) {
-    font-size: 25px;
   }
 }
