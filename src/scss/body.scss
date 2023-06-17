@@ -8,26 +8,12 @@ body {
   @media (min-width: 992px) {
     font-size: $font_size;
   }
-
-  &.bg-color {
-    background: $bg_light_2;
-  }
-
 }
 
 .container {
   @include make-container(40px);
   @media (min-width: 768px) {
     @include make-container(30px);
-  }
-  @media (min-width: 992px) {
-    max-width: 960px;
-  }
-  @media (min-width: 1200px) {
-    max-width: $container-xl;
-  }
-  @media (min-width: 1400px) {
-    max-width: $container-xxl;
   }
   @media (min-width: 1650px) {
     max-width: $container-xxxl;
@@ -37,58 +23,6 @@ body {
     position: relative;
   }
 
-  &.container_text {
-    padding-top: 37px;
-    @media (min-width: 1200px) {
-      padding-top: 68px;
-    }
-  }
-
-  &.container_unsubscribe {
-    padding-top: 37px;
-    max-width: 725px + 30px;
-    @media (min-width: 1200px) {
-      padding-top: 68px;
-    }
-  }
-
-  &.container_settings {
-    padding-top: 40px;
-    @media (min-width: 992px) {
-      padding-top: 73px;
-    }
-    @media (min-width: 1400px) {}
-  }
-
-  &.container_profile {
-    padding-top: 40px;
-    @include make-container(40px);
-    @media (min-width: 768px) {
-      @include make-container(30px);
-    }
-    @media (min-width: 992px) {
-      padding-top: 73px;
-    }
-  }
-
-  &.container_ulist {
-    padding-top: 30px;
-    @media (min-width: 992px) {
-      padding-top: 62px;
-    }
-  }
-
-  &.container_xxxl {
-    @media (min-width: 1650px) {
-      max-width: $container-xxxl;
-    }
-  }
-
-  &.container_lg {
-    @media (min-width: 992px) {
-      max-width: 840px;
-    }
-  }
 }
 
 .preloader {
@@ -105,7 +39,7 @@ body {
   .loader {
     width: 75px;
     height: 75px;
-    background-image: url('../img/icons/favicon.svg');
+    background-image: url('../img/icons/logo.svg');
     position: absolute;
     top: 50%;
     left: 50%;

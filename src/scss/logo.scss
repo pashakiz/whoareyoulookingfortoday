@@ -1,37 +1,12 @@
 .logo {
-  width: 240px;
-  height: 37px;
-  background-image: url('../img/icons/logo_m.svg');
+  width: 40px;
+  height: 36px;
+  background-image: url('../img/icons/logo.svg');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 100%;
   @media (min-width: 992px) {
-    background-image: url('../img/icons/logo.svg');
-    width: 336px;
-    height: 62px;
+    width: 43px;
+    height: 38px;
   }
-
-  &.logo_main {
-    margin: 14px 0 19px;
-    @media (min-width: 992px) {
-      background-image: url('../img/icons/logo_m.svg');
-      margin: 14px 0 19px;
-      width: 240px;
-      height: 37px;
-    }
-    @media (min-width: 1200px) {
-      background-image: url('../img/icons/logo.svg');
-      margin: 101px 0 27px;
-      width: 336px;
-      height: 62px;
-    }
-  }
-
-  &.logo_login {
-    margin: 50px 0 29px;
-    @media (min-width: 992px) {
-      margin: 147px 0 94px;
-    }
-  }
-
 }

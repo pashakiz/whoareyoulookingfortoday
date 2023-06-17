@@ -1,69 +1,45 @@
-$container-xl:              960px + 30px;
-$container-xxl:             960px + 30px;
-$container-xxxl:            960px + 30px;
-$body_bg_color:             #91A8EB;
-$btn_bg_color:              #F8CB46;
-$btn_bg_color_hover:        #FFDD77;
-$btn_bg_color_active:       #FFE927;
-$bg_dark_1:                 #282825;
-$bg_dark_2:                 #000;
-$bg_light_1:                #F9F5F2;
-$bg_light_2:                #FE91E8;
-$bg_light_3:                #E4E7EE;
-$bg_light_4:                #D3D3D3;
-$bg_light_5:                #FFDEF8;
-$font_color:                #F9F5F2;
-$font_color2:               #000000;
-$font_color3:               $body_bg_color;
-$font_color4:               #527EFF;
-$font_color5:               #322C0C;
-$font_color6:               #828282;
-$font_color7:               #4F4F4F;
-$font_color8:               #393834;
-$font_family:               "WorkSans", sans-serif;
-$font_family2:              "WorkSans", sans-serif;
-$font_weight:               400;
-$font_size:                 18px;
-$font_size_mobile:          14px;
-$body_mb:                   130px;
-$body_mb_lg:                130px;
-$body_mb_xs:                100px;
-$link_txt_family:           $font_family;
+$container-xxxl:            1580px + 30px;
+$body_bg_color:             #F5F4EB;
+$btn_bg_color:              #0035BC;
+/**/$btn_bg_color_hover:        #FFDD77;
+/**/$btn_bg_color_active:       #FFE927;
+/**/$bg_dark_1:                 #282825;
+/**/$bg_dark_2:                 #000;
+/**/$bg_light_1:                #F9F5F2;
+/**/$bg_light_2:                #FE91E8;
+/**/$bg_light_3:                #E4E7EE;
+/**/$bg_light_4:                #D3D3D3;
+/**/$bg_light_5:                #FFDEF8;
+/**/$font_color:                #F9F5F2;
+/**/$font_color2:               #000000;
+/**/$font_color3:               $body_bg_color;
+/**/$font_color4:               #527EFF;
+/**/$font_color5:               #322C0C;
+/**/$font_color6:               #828282;
+/**/$font_color7:               #4F4F4F;
+/**/$font_color8:               #393834;
+$font_family:               "CeraPro", sans-serif;
+$font_family2:              "CeraPro", sans-serif;
+/**/$font_weight:               400;
+/**/$font_size:                 18px;
+/**/$font_size_mobile:          14px;
+/**/$body_mb:                   130px;
+/**/$body_mb_lg:                130px;
+/**/$body_mb_xs:                100px;
+/**/$link_txt_family:           $font_family;
+
 /**/$link_color:                $font_color;
 /**/$link_hover_color:          $font_color4;
 /**/$link_active_color:         $font_color5;
 /**/$link_hover_color1:         #bd7667; //unuse
 /**/$link_hover_color2:         $link_hover_color; //unuse
-$footer_height:             166px;
-$footer_height_lg:          166px;
-$footer_height_xs:          195px;
+
+$footer_height:             170px;
+$footer_height_lg:          170px;
+$footer_height_xs:          300px;
 $footer_text_color:         $font_color2;
 $footer_text_color_hover:   $font_color3;
 $footer_text_color_active:  $font_color4;
-
-//Form
-$input_bg:                  $bg_light_3;
-$input_hover_bg:            $bg_light_5;
-$input_txt_family:          $font_family;
-$input_txt_color:           $font_color5;
-$input_hover_txt_color:     $font_color5;
-$input_placeholder_color:   $font_color6;
-$input_txt_xs_size:         15px;
-$input_txt_xs_lh:           1.5;
-$input_txt_size:            18px;
-$input_txt_lh:              1.5;
-$input_border_color:        $font_color;
-$input_border:              none;
-$input_hover_border:        none;
-$input_hover_focus_outline: none;
-$input_border_radius:       50px;
-$textarea_border_radius:    14px;
-$textarea_border_radius_mob:20px;
-
-
-//User List page wider
-$user_list_item_breakpoint: 992px;
-$user_list_title_color:     $font_color;
 
 /**/
 @mixin circle($diameter, $background-color) {
@@ -71,45 +47,6 @@ $user_list_title_color:     $font_color;
   height: $diameter;
   background-color: $background-color;
   border-radius: 100%;
-}
-
-@mixin img-mask($url, $top, $left, $width, $height, $bsize, $bpos) {
-  &::after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: $top;
-    left: $left;
-    right: 0;
-    bottom: 0;
-    width: $width;
-    height: $height;
-    background-image: url($url);
-    background-size: $bsize;
-    background-position: $bpos;
-    background-repeat: no-repeat;
-    z-index: 1;
-  }
-}
-
-@mixin color-filter($color, $alpha) {
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 250px;
-    background-color: rgba($color, $alpha);
-    z-index: 2;
-    border-radius: 30px 30px 26px 30px;
-    @media (min-width: 992px) {
-      height: 308px;
-      border-radius: 36px 36px 26px 36px;
-    }
-  }
 }
 
 @mixin overflow-ellipsis() {
