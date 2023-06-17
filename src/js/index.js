@@ -16,15 +16,45 @@ const preloader = () => {
 }
 document.addEventListener('DOMContentLoaded', preloader, false);
 
-//upload photo
-const uploadPhotoInput = document.querySelector('.custom-file-input');
-const profilePhoto = document.querySelector('.settings-photo .profile-photo');
-const uploadPhoto = () => {
-  let url = 'assets/img/photos/ava.jpg';
-  profilePhoto.style.backgroundImage = 'url(' + url + ')';
+//header random users
+const getRandomInt = (max) => Math.floor(Math.random() * max) + 1;
+const count = 5;
+let selections = document.body.querySelectorAll('.choose');
+selections[getRandomInt(count) - 1].style.display = 'flex';
+
+//form
+const form = document.querySelector('.form');
+const formBtn = document.querySelector('.form__btn');
+const formInput = document.querySelector('.form input.form-control');
+const messageTrue = document.querySelector('.form .form__response.form__response_true');
+const messageFalse = document.querySelector('.form .form__response.form__response_false');
+const formValidate = () => {
+  let error = false;
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (formInput.value == '')
+    error = true;
+
+  if (!emailRegex.test(formInput.value))
+    error = true;
+
+  if (error) {
+    messageTrue.style.display = 'none';
+    messageFalse.style.display = 'block';
+    formInput.classList.add('form-control_error');
+    return false
+  }
+
+  formSend();
 }
-if (!!uploadPhotoInput)
-  uploadPhotoInput.addEventListener('change', uploadPhoto, false);
+const formSend = () => {
+  console.log('formSend');
+  formInput.classList.remove('form-control_error');
+  messageFalse.style.display = 'none';
+  messageTrue.style.display = 'block';
+}
+if (!!form)
+  formBtn.addEventListener('click', formValidate, false);
 
 
 // Splidejs (cursor customisation)
