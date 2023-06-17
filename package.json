@@ -48,6 +48,7 @@
   "browserslist": "defaults",
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
+    "@popperjs/core": "^2.11.8",
     "@splidejs/splide": "^4.1.4",
     "bootstrap": "^5.2.3"
   }
