@@ -1,6 +1,6 @@
 <script>
   const getRandomInt = (max) => Math.floor(Math.random() * max) + 1;
-  /*
-    let preloader = document.body.querySelector('#page-preloader');
-  */
+  const count = 5;
+  let selections = document.body.querySelectorAll('.choose');
+  selections[getRandomInt(count) - 1].style.display = 'flex';
 </script>

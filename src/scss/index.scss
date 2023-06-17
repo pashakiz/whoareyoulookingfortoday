@@ -1,5 +1,8 @@
-.block {}
+.block {
+  @media (min-width: 1200px) {}
+}
 
 .block_light {
   background-color: $bg_light_1;
 }
+

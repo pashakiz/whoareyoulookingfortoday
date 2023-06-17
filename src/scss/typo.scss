@@ -1,13 +1,18 @@
 h1 {
   font-family: $font_family2;
-  font-weight: 400;
-  font-size: 247px;
-  line-height: 1.2;
-  color: $bg_light_3;
-  margin: 0;
+  font-weight: 900;
+  font-size: 23px;
+  line-height: 1.3;
+  color: $font_color;
+  margin: 19px 0;
   text-align: center;
-  @media (min-width: 1920px) {
-    font-size: 247px;
+  text-transform: uppercase;
+  @media (min-width: 330px) {
+    font-size: 24px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 43px;
+    margin: 25px 0 50px;
   }
 }
 
