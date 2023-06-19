@@ -92,13 +92,13 @@ p {
 
 a {
   color: $link_color;
-  text-decoration: none;
+  text-decoration: underline;
   &:hover {
     color: $link_hover_color;
-    text-decoration: none;
+    text-decoration: underline;
   }
   &:active {
     color: $link_active_color;
-    text-decoration: none;
+    text-decoration: underline;
   }
 }

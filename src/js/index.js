@@ -27,6 +27,7 @@ const formBtn = document.querySelector('.form__btn');
 const formInput = document.querySelector('.form input.form-control');
 const messageTrue = document.querySelector('.form .form__response.form__response_true');
 const messageFalse = document.querySelector('.form .form__response.form__response_false');
+
 const formValidate = () => {
   let error = false;
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -52,9 +53,18 @@ const formSend = () => {
   messageFalse.style.display = 'none';
   messageTrue.style.display = 'block';
 }
+
 if (!!form)
   formBtn.addEventListener('click', formValidate, false);
 
+//open all (links)
+const moreLinksBtn = document.querySelector('.category__btn');
+const showMoreLinks = (e) => {
+  const hiddenLinks = document.querySelectorAll('.category__hide');
+  hiddenLinks.forEach(links => links.classList.remove('d-none', 'd-xl-block'));
+  e.target.style.display = 'none';
+}
+moreLinksBtn.addEventListener('click', showMoreLinks, false);
 
 // Splidejs (cursor customisation)
 const splides = document.querySelectorAll('.splide');

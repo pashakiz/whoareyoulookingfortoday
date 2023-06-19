@@ -5,7 +5,7 @@ body {
   color: $font_color;
   line-height: 1.5;
   background: $body_bg_color;
-  @media (min-width: 992px) {
+  @media (min-width: 1200px) {
     font-size: $font_size;
   }
 }

@@ -18,10 +18,12 @@
   &:hover {
     color: $font_colorF;
     background: $btn_bg_color_hover;
+    text-decoration: none;
   }
   &:active {
     color: $font_colorF !important;
     background: $btn_bg_color_active !important;
+    text-decoration: none;
   }
   &:focus {
     outline: none;

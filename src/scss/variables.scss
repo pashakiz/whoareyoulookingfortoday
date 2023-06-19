@@ -28,10 +28,10 @@ $font_size_mobile:          13px;
 $body_mb:                   10px;
 $body_mb_lg:                10px;
 $body_mb_xs:                50px;
-/**/$link_txt_family:           $font_family;
-/**/$link_color:                $font_color;
-/**/$link_hover_color:          $font_color4;
-/**/$link_active_color:         $font_color5;
+$link_txt_family:           $font_family;
+$link_color:                $font_color;
+$link_hover_color:          $btn_bg_color_hover;
+$link_active_color:         $btn_bg_color_active;
 
 $footer_height:             170px;
 $footer_height_lg:          170px;

@@ -50,6 +50,7 @@
 
 .vitem {
   width: 248px;
+  text-decoration: none !important;
   @media (min-width: 1200px) {
     width: 540px;
   }
@@ -142,5 +143,33 @@
     @media (min-width: 1650px) {
       margin: 0 0 0 17px;
     }
+  }
+}
+
+.category {
+  display: block;
+  text-align: center;
+  @media (min-width: 1200px) {
+    text-align: left;
+  }
+}
+
+.category__link {
+  font-size: 14px;
+  line-height: 21px;
+  color: $bg_dark_1;
+  text-transform: uppercase;
+  text-decoration: underline;
+  @media (min-width: 1200px) {
+    font-size: 22px;
+    line-height: 38px;
+  }
+}
+
+.category__btn {
+  width: 100% !important;
+  margin: 30px auto 0;
+  @media (min-width: 400px) {
+    width: 280px !important;
   }
 }
